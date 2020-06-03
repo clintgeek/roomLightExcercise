@@ -1,15 +1,11 @@
-.roomContainer {
-
-}
-
 .roomName {
-  margin-left: 0;
+  padding-bottom: 1rem;
 }
 
 .walledRoom {
   border: 1px solid darkgray;
   padding: 20px;
-  background: black;
+  background: #222222;
 }
 
 .bright {

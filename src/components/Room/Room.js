@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Light from '../Light/';
-import Switch from '../Switch';
+import LightBulb from '../LightBulb/';
+import LightSwitch from '../LightSwitch';
 import './Room.css';
 
 function Room(props) {
@@ -10,11 +10,11 @@ function Room(props) {
   const roomClass = 'walledRoom' + lightLevelClass;
 
   return (
-    <div className="roomContainer">
+    <div>
       <div className="roomName">{props.name}</div>
       <div className={roomClass}>
-        <Light powered={powered}/>
-        <Switch powered={powered} setPower={setPower} />
+        <LightBulb powered={powered}/>
+        <LightSwitch powered={powered} setPower={setPower} />
       </div>
     </div>
   );

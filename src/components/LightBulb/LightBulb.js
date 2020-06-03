@@ -1,11 +1,9 @@
 import React from 'react';
-import './Light.css';
+import './LightBulb.css';
 
-function Light(props) {
+function LightBulb(props) {
   var lightPowerClass = props.powered ? ' powered' : '';
-  const lightClass = 'light' + lightPowerClass;
-
-  var lightText = props.powered ? 'Light is ON!' : 'Light is OFF!';
+  const lightClass = 'lightBulb' + lightPowerClass;
 
   return (
     <div className={lightClass}>
@@ -14,4 +12,4 @@ function Light(props) {
   );
 }
 
-export default Light;
+export default LightBulb;
