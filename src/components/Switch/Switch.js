@@ -1,10 +1,36 @@
 import React from 'react';
-// import './App.css';
+import './Switch.css';
 
-function Switch() {
+function Switch(props) {
+  const togglePower = () => {
+    props.setPower(!props.powered);
+  };
+
+
   return (
     <div className="Switch">
-      This is a switch!
+      <label className="powerToggleLabel">
+        <input
+          type="radio"
+          name="power-on"
+          value={true}
+          checked={props.powered}
+          onChange={togglePower}
+          className="powerToggle"
+        />
+        ON
+      </label>
+      <label className="powerToggleLabel">
+        <input
+          type="radio"
+          name="power-off"
+          value={true}
+          checked={!props.powered}
+          onChange={togglePower}
+          className="powerToggle"
+        />
+        OFF
+      </label>
     </div>
   );
 }

@@ -1,7 +1,18 @@
-.roomName {
+.roomContainer {
 
 }
-.roomContainer {
-  border: 1px solid lightgray;
+
+.roomName {
+  margin-left: 0;
+}
+
+.walledRoom {
+  border: 1px solid darkgray;
   padding: 20px;
+  background: black;
+}
+
+.bright {
+  border: 1px solid black;
+  background: lightgray;
 }
