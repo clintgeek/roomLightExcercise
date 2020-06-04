@@ -7,7 +7,7 @@ exports[`<Room> component should match snapshot 1`] = `
   </div>
   <div className=\\"walledRoom\\">
     <LightBulb powered={false} />
-    <LightSwitch powered={false} setPower={[Function: bound _dispatchAction]} />
+    <LightSwitch powered={false} togglePower={[Function: togglePower]} />
   </div>
 </div>"
 `;

@@ -2,15 +2,11 @@ import React from 'react';
 import Switch from '@material-ui/core/Switch';
 
 function LightSwitch(props) {
-  const togglePower = () => {
-    props.setPower(!props.powered);
-  };
-
   return (
-    <div className="Switch">
+    <div>
       <Switch
         checked={props.powered}
-        onChange={togglePower}
+        onChange={props.togglePower}
         name="power"
         inputProps={{ 'aria-label': 'power' }}
       />

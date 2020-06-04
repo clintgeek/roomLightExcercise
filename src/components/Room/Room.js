@@ -6,6 +6,8 @@ import './Room.css';
 function Room(props) {
   const [ powered, setPower ] = useState(false);
 
+  const togglePower = () => setPower(!powered);
+
   var lightLevelClass = powered ? ' bright' : '';
   const roomClass = 'walledRoom' + lightLevelClass;
 
@@ -14,7 +16,7 @@ function Room(props) {
       <div className="roomName">{props.name}</div>
       <div className={roomClass}>
         <LightBulb powered={powered}/>
-        <LightSwitch powered={powered} setPower={setPower} />
+        <LightSwitch powered={powered} togglePower={togglePower} />
       </div>
     </div>
   );
