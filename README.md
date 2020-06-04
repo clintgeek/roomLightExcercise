@@ -1,4 +1,4 @@
-This project provides a visual representation of a room, a light switch, and a light bulb. When you click on the light switch, it turns on the light? It's a little to bright? Maybe you changed your mind? Click it again! It'll turn it right back off. Click it as often as you desire, it'll never grow tired or annoyed at your poking around!
+This project provides a visual representation of a room, a light switch, and a light bulb. When you click on the light switch, it turns on the light. It's a little to bright? Maybe you changed your mind? Click it again! It'll turn it right back off. Click it as often as you desire, it'll never grow tired or annoyed at your poking around!
 
 `yarn start` fires it up, and `yarn test` will demonstrate the potentially excessive testing that went into it.
 
