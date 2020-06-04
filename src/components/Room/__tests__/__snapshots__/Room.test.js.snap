@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Room> component should match snapshot 1`] = `
+"<div>
+  <div className=\\"roomName\\">
+    test room
+  </div>
+  <div className=\\"walledRoom\\">
+    <LightBulb powered={false} />
+    <LightSwitch powered={false} setPower={[Function: bound _dispatchAction]} />
+  </div>
+</div>"
+`;
