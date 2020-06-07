@@ -1,10 +1,18 @@
 This project provides a visual representation of a room, a light switch, and a light bulb. When you click on the light switch, it turns on the light. It's a little to bright? Maybe you changed your mind? Click it again! It'll turn it right back off. Click it as often as you desire, it'll never grow tired or annoyed at your poking around!
 
+
+### Launch it!
+
+#### Yarn
 `yarn start` fires it up, and `yarn test` will demonstrate the potentially excessive testing that went into it.
+
+#### Docker
+You can optionally run it in Docker by doing `docker build -t demo:dev` to build and tag it followed by 
+`docker run -it --rm -v ${PWD}:/app -v /app/node_modules -p 3001:3000 -e CHOKIDAR_USEPOLLING=true demo:dev` to fire it up on `http://localhost:3000`.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Miscellaneous Information
 
 In the project directory, you can run:
 
