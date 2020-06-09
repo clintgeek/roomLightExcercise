@@ -16,6 +16,12 @@
     ". . bottom-right";
 }
 
+.encouragement {
+  padding-top: .5rem;
+  color: darkgray;
+  font-size: medium;
+}
+
 .room {
   grid-area: top-center;
 }
